@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Custom2";
+    src: url('../Fonts/Karma Suture.otf');
+}
+
+.leaderBoardCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.leaderboardTitleStyle{
+    margin-top: 0;
+    font-family: 'Custom1';
+    color: rgb(0, 255, 238);
+    font-size: 40px;
+}
+
+.table{
+    border-collapse: collapse;
+    background-image: linear-gradient(to top left, #4a4650, #140f13) ;
+    font-size: 28px;
+    font-weight: bolder;
+    height: auto;
+    width: auto;
+    /* box-shadow:  16px 0px 150px  rgb(0, 255, 238); */
+    border-radius: 4px;
+}
+
+.rowsStyle{
+    color: aquamarine;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 8px;
+    font-size: 32px;
+    font-family: 'Custom1';
+}
+
+.responsiveSkeleton {
+    width: 75%; 
+}
+
+@keyframes mymove1 {
+    5% {text-shadow: 0px 0px 10px rgb(255, 166, 0);}
+}
+
+
+.first{
+    font-family: 'Custom2';
+    padding-bottom: 8px;
+    color: rgb(218, 189, 31);
+    animation: mymove1 1.5s infinite;
+    text-shadow: 
+    0.5px 0 goldenrod, -0.5px 0 goldenrod, 0 0.5px goldenrod, 0 -0.5px goldenrod,
+    0.5px 0.5px goldenrod, -0.5px -0.5px goldenrod, 0.5px -0.5px goldenrod, -0.5px 0.5px goldenrod;
+}
+
+@keyframes mymove2 {
+    5% {text-shadow: 0px 0px 10px silver}
+}
+
+.second{
+    font-family: 'Custom2';
+    padding-bottom: 8px;
+    color: silver;
+    animation: mymove2 1.5s infinite;
+    text-shadow: 
+    0.5px 0 silver, -0.5px 0 silver, 0 0.5px silver, 0 -0.5px silver,
+    0.5px 0.5px silver, -0.5px -0.5px silver, 0.5px -0.5px silver, -0.5px 0.5px silver;
+}
+
+@keyframes mymove3 {
+    5% {text-shadow: 0px 0px 10px brown}
+}
+
+.third{
+    font-family: 'Custom2';
+    padding-bottom: 8px;
+    color: #b56f29;
+    animation: mymove3 1.5s infinite;
+    text-shadow: 
+    0.5px 0 #CD7F32, -0.5px 0 #CD7F32, 0 0.5px #CD7F32, 0 -0.5px #CD7F32,
+    0.5px 0.5px #CD7F32, -0.5px -0.5px #CD7F32, 0.5px -0.5px #CD7F32, -0.5px 0.5px #CD7F32;
+}
+
+
+.other{
+    font-family: 'Custom2';
+    padding-bottom: 8px;
+    color: gray;
+    text-shadow: 
+    2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+.customSkeleton {
+    margin: auto;
+}
+
+@media only screen and (max-width: 800px) {
+    .leaderBoardCenter{
+        overflow: auto;
+    }
+    .table {
+        margin-left: 56px;
+        height: 352px;
+        font-size: 4.5vw; 
+        border-radius: 1vw; 
+    }
+    .rowsStyle {
+        padding: 0.7vh 2vw; 
+        font-size: 4.5vw;
+    }
+    .first, .second, .third, .other {
+        font-size: 4vw;
+    }
+    .leaderboardTitleStyle{
+        margin-left: 56px;
+        font-size: 6vw;
+    }
+    .responsiveSkeleton {
+        width: 50%; 
+    }
+}

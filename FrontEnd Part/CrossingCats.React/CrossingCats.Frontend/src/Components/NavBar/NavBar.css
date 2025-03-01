@@ -1,0 +1,25 @@
+.btn{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: yellow;
+}
+
+.main-div{
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.change-color .MuiDrawer-paper{
+    background-color: rgb(255, 111, 0);
+}

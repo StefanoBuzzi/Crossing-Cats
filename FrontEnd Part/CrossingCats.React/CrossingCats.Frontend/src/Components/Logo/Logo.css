@@ -1,0 +1,84 @@
+.box {
+	display: flex;
+}
+
+.box .inner {
+	width: 425px;
+	height: 200px;
+	line-height: 200px;
+	font-size: 4em;
+	font-family: 'Custom2';
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.box .inner:first-child {
+	background-color: black;
+	color: rgb(0, 255, 238);
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-15deg);
+}
+
+.box .inner:last-child {
+	background-color: rgb(0, 255, 238);
+	color: black;
+	transform-origin: left;
+	transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+	position: absolute;
+	animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+	animation-delay: 2.5s;
+	left: -100%;
+}
+
+@keyframes marquee {
+	from {
+		left: 105%;
+	}
+
+	to {
+		left: -105%;
+	}
+}
+
+@media only screen and (max-width:850px){
+    .box .inner{
+		height: 146px;
+		width: 224px;
+		font-size: 32px;
+		line-height: 146px;
+	}
+  }
+
+  @media only screen and (max-width:510px){
+    .box .inner{
+		height: 128px;
+		width: 192px;
+		font-size: 24px;
+		line-height: 128px;
+	}
+  }
+
+  @media only screen and (max-width:440px){
+    .box .inner{
+		height: 104px;
+		width: 168px;
+		font-size: 24px;
+		line-height: 104px;
+	}
+  }
+
+  @media only screen and (max-height: 750px){
+	.box .inner{
+		margin-top: 6vh;
+		height: 112px;
+		width: 192px;
+		font-size: 24px;
+		line-height: 112px;
+	}
+  }

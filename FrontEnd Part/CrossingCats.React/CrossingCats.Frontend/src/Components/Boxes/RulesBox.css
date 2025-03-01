@@ -1,0 +1,26 @@
+.CustomTextarea {
+    box-sizing: border-box;
+    width: 320px;
+    font-family: 'Custom2';
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: black;
+    color: rgb(0, 255, 238);
+  }
+
+ .CustomTextarea:hover {
+    border-color: cyan;
+  }
+
+ .CustomTextarea:focus {
+    outline: 0;
+    border-color: cyan;
+    box-shadow: 0 0 0 3px;
+  }
+
+  .CustomTextarea:focus-visible {
+    outline: 0;
+  }

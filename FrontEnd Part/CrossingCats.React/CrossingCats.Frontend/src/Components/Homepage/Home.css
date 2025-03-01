@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Custom1';
+    src: url('../Fonts/ka1.ttf');
+}
+
+.game-btn {
+    margin-top: 20vh;
+}
+
+.logo1 {
+    margin-top: 10vh;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color {
+    font-family: 'Custom2';
+    color: rgb(0, 255, 238);
+}
+
+
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: rgb(0, 140, 255);
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    width: 120px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.user-btn {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    background-color: transparent;
+}
+
+.user-text {
+    font-size: 14px;
+    overflow-wrap: break-word;
+    margin: 0;
+    margin-top: 4px;
+    background-color: transparent;
+    color: rgb(0, 255, 238);
+    font-family: 'Custom2';
+    padding-bottom: 6px;
+    text-shadow:
+        2px 0 black,
+        -2px 0 black,
+        0 2px black,
+        0 -2px black,
+        1px 1px black,
+        -1px -1px black,
+        1px -1px black,
+        -1px 1px black;
+}
+
+.trailer {
+    position: absolute;
+    top: 5%;
+    left: 75%;
+}
+@media only screen and (max-width: 840px) {
+    .logo1 {
+        margin-left: 56px;
+    }
+    .game-btn {
+        margin-left: 24px;
+    }
+}
+
+@media only screen and (max-width: 1620px) {
+    .trailer {
+        display: none;
+    }
+}

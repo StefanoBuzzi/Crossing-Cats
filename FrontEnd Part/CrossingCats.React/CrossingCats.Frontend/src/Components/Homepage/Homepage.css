@@ -1,0 +1,43 @@
+.app {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-container {
+    height: 100vh;
+    background-color: #4f4f4f;
+    background-image: url('https://i.pinimg.com/originals/ba/94/05/ba9405b7822bc4eebad24672f802abc1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.left-div {
+    width: 100px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    top: 20%;
+    right: 30%;
+}
+
+.game-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.game-button {
+    width: 300px;
+    height: 150px;
+    font-weight: bold;
+    background-color: rgb(255, 111, 0);
+    cursor: pointer;
+}

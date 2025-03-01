@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[Game]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
+    [GameUrl] VARCHAR(200) NOT NULL
+)

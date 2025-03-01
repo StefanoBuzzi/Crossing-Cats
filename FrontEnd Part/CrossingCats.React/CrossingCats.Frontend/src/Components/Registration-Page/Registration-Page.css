@@ -1,0 +1,83 @@
+.RegistrationContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://c.wallhere.com/photos/11/23/pixels_pixel_art_pixelated_cityscape_building_skyscraper_starry_night_Moon-1489929.jpg!d');
+    background-size: cover;
+    background-position: center;
+}
+
+.frm{
+    display: grid;
+    margin: 0;
+    align-items: center; 
+}
+
+.input-color{
+    background-color: #2e2e2e;
+    border: 0;
+    margin-bottom: 1rem;
+}
+
+::placeholder{
+    color: white;
+}
+
+.welcomeStyle2{
+  margin-top: 0;
+  font-family: 'Custom1';
+  font-size: 48px;
+  color:rgb(0, 255, 238);
+}
+.registerBackgroundStyle{
+    overflow-y: auto;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    border-radius: 4px;
+    background-color: rgba(128, 128, 128, 0.5);
+ }
+
+ .registerBackgroundStyle::-webkit-scrollbar {
+    width: 8px; 
+  }
+  
+  .registerBackgroundStyle::-webkit-scrollbar-track {
+    background: gray;
+  }
+  
+  .registerBackgroundStyle::-webkit-scrollbar-thumb {
+    background: rgb(0, 255, 238);
+    border-radius: 4px; 
+  }
+  
+  .registerBackgroundStyle::-webkit-scrollbar-thumb:hover {
+    background: rgb(10, 139, 131);
+  }
+
+  @media only screen and (max-width: 680px){
+    .input-color{
+      width:100%;
+      font-size: 2vh;
+      height: 80%;
+    }
+    .registerBackgroundStyle{
+      padding-left: 14px;
+      font-size: 2vh;
+    }
+    .welcomeStyle2{
+      font-size: 3vh;
+    }
+    .registerLink{
+      font-size: 8px;
+    }
+  }
